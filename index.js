@@ -6,11 +6,12 @@ var animation = false,
     domPrefixes = 'Webkit Moz O ms Khtml'.split(' '),
     pfx  = '';
 
-if( elm.style.animationName ) { animation = true; }
+var el = document.createElement('div');
+if( el.style.animationName ) { animation = true; }
 
 if( animation === false ) {
   for( var i = 0; i < domPrefixes.length; i++ ) {
-    if( elm.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+    if( el.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
       pfx = domPrefixes[ i ];
       animationstring = pfx + 'Animation';
       keyframeprefix = '-' + pfx.toLowerCase() + '-';
