@@ -1,0 +1,9 @@
+{
+  "name": "eugenicsarchivesca-has-css-animations",
+  "description": "determines if the browser supports css animations (basically, IE 9 and below)",
+  "version": "0.0.1",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {},
+  "license": "MIT"
+}
